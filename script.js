@@ -134,7 +134,7 @@ async function listMajors() {
     try {
         response = await gapi.client.sheets.spreadsheets.values.get({
             spreadsheetId: localStorage.getItem("spreadsheetId"),
-            range: 'Sheet1!A1:B2',
+            range: 'Лист1!A1:B2',
         });
     } catch (err) {
         console.log(err);
